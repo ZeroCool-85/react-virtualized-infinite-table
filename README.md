@@ -18,7 +18,7 @@ yarn add react-virtualized-infinite-table --save
 ## Props
 
 Prop | type | default | required | description
---- | --- | --- | ---
+--- | --- | --- | --- | ---
 tableContainerClassName | string | undefined | | Add a class to the table wrapper div
 tableClassName | string | undefined | | Add a class to the table
 headerRowRenderer | func | undefined | &#9745; | Rendering the header
