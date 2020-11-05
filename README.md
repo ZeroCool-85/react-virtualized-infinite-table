@@ -46,7 +46,7 @@ class Example extends Component {
   render() {
     return (
       <InfiniteTable
-        tableClassName={"table"}
+         tableClassName={"table"}
          height={800}
          bodyRowRenderer={bodyRowRenderer}
          headerRowRenderer={headerRowRenderer}
