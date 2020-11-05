@@ -1,6 +1,6 @@
 {
   "name": "react-virtualized-infinite-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A virtualized infinite scrolling table for react.",
   "author": "ZeroCool-85",
   "license": "MIT",
@@ -8,6 +8,7 @@
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
+  "keywords": ["react", "table", "infinite", "scrolling", "virtualized"],
   "engines": {
     "node": ">=10"
   },
