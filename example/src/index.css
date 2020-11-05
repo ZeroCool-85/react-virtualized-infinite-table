@@ -6,9 +6,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eceff1;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+thead tr {
+  height: 50px;
+}
+
+thead td {
+  background-color: beige !important;
+}
+
+.table-row {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.table {
+  margin: 0 auto;
 }

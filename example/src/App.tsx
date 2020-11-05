@@ -1,6 +1,7 @@
 import React, { useCallback, useState } from 'react'
 import faker from 'faker'
 
+import './index.css'
 import { InfiniteTable } from 'react-virtualized-infinite-table'
 import 'react-virtualized-infinite-table/dist/index.css'
 
@@ -24,7 +25,7 @@ const App = () => {
   }, [])
 
   const bodyRowRenderer = useCallback((item, i) => (
-    <tr key={i}>
+    <tr key={i} className={"table-row"}>
       <td>{item.firstName}</td>
       <td>{item.lastName}</td>
       <td>{item.title}</td>
@@ -33,7 +34,7 @@ const App = () => {
   ), [])
 
   const headerRowRenderer = useCallback(() => (
-    <tr>
+    <tr className={"table-row"}>
       <td>FirstName</td>
       <td>LastName</td>
       <td>Title</td>
@@ -41,17 +42,23 @@ const App = () => {
     </tr>
   ), [])
 
-  return <InfiniteTable
-    height={800}
-    bodyRowRenderer={bodyRowRenderer}
-    headerRowRenderer={headerRowRenderer}
-    fetchMore={fetchMore}
-    isLoading={isLoading}
-    itemHeight={75}
-    items={items}
-    itemsTotalLength={itemsTotalLength}
-    stickyHeader
-  />
+  return (
+    <div>
+      <h1>React Virtualized Infinite Table</h1>
+      <InfiniteTable
+        tableClassName={"table"}
+        height={800}
+        bodyRowRenderer={bodyRowRenderer}
+        headerRowRenderer={headerRowRenderer}
+        fetchMore={fetchMore}
+        isLoading={isLoading}
+        itemHeight={75}
+        items={items}
+        itemsTotalLength={itemsTotalLength}
+        stickyHeader
+      />
+    </div>
+  )
 }
 
 export default App

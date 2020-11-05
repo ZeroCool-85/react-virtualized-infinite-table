@@ -8,6 +8,7 @@
 
 ```bash
 npm install --save react-virtualized-infinite-table
+yarn add react-virtualized-infinite-table --save
 ```
 
 ## Usage
@@ -15,12 +16,25 @@ npm install --save react-virtualized-infinite-table
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-virtualized-infinite-table'
+import { InfiniteTable } from 'react-virtualized-infinite-table'
 import 'react-virtualized-infinite-table/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+      <InfiniteTable
+        tableClassName={"table"}
+         height={800}
+         bodyRowRenderer={bodyRowRenderer}
+         headerRowRenderer={headerRowRenderer}
+         fetchMore={fetchMore}
+         isLoading={isLoading}
+         itemHeight={75}
+         items={items}
+         itemsTotalLength={itemsTotalLength}
+         stickyHeader
+      />
+    )
   }
 }
 ```
