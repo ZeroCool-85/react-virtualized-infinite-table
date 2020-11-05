@@ -1,7 +1,7 @@
-import { ExampleComponent } from '.'
+import { InfiniteTable } from '.'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(InfiniteTable).toBeTruthy()
   })
 })
