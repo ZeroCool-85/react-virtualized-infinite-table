@@ -11,6 +11,10 @@ npm install --save react-virtualized-infinite-table
 yarn add react-virtualized-infinite-table --save
 ```
 
+## Example
+
+[example table](https://zerocool-85.github.io/react-virtualized-infinite-table/)
+
 ## Usage
 
 ```tsx
