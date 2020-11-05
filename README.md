@@ -23,8 +23,8 @@ tableContainerClassName | string | undefined | | Add a class to the table wrappe
 tableClassName | string | undefined | | Add a class to the table
 headerRowRenderer | func | undefined | &#9745; | Rendering the header
 bodyRowRenderer | func | undefined | &#9745; | Rendering the bodyRow (item: any, index: number) => any
-height | number | 500 | height of the table
-stickyHeader | bool | false | Made the header sticky
+height | number | 500 | | height of the table
+stickyHeader | bool | false | | Made the header sticky
 items | array<any> | undefined | &#9745; | An array of items for the body rows
 itemHeight | number | 75 | | height of the body rows
 isLoading | bool | false | &#9745; | loading flag for fetching more
