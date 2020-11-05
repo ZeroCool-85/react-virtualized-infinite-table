@@ -7,10 +7,10 @@ interface Props {
   tableClassName?: string
   headerRowRenderer: () => any
   bodyRowRenderer: (item: any, index: number) => any
-  height: number
+  height?: number
   stickyHeader?: boolean
   items: Array<any>
-  itemHeight: number
+  itemHeight?: number
   isLoading: boolean
   fetchMore: () => any
   itemsTotalLength: number
@@ -23,10 +23,10 @@ const InfiniteTable = ({
   tableClassName,
   headerRowRenderer,
   bodyRowRenderer,
-  height,
+  height = 500,
   stickyHeader,
   items,
-  itemHeight: ITEM_HEIGHT,
+  itemHeight: ITEM_HEIGHT = 75,
   isLoading,
   fetchMore,
   itemsTotalLength,
